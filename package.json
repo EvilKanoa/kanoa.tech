@@ -7,6 +7,9 @@
     "build": "react-static build",
     "serve": "serve dist -p 8080 -s"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
     "front-matter": "^3.0.1",
     "marked": "^0.6.0",
