@@ -1,5 +1,6 @@
 ### Custom ###
 tmp/
+dist/
 
 ### Windows ###
 # Windows thumbnail cache files
