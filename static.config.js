@@ -27,11 +27,11 @@ const getRoutes = async () => {
         {
             path: 'blog',
             component: 'src/pages/Blog',
-            getData: async () => ({ posts }),
+            getData: () => ({ posts }),
             children: posts.map((post) => ({
                 path: post.slug,
                 component: 'src/pages/BlogPost',
-                getData: async () => ({ post })
+                getData: () => ({ post })
             }))
         }
     ];
