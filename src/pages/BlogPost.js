@@ -1,9 +1,13 @@
 import React from 'react';
+import {withRouteData} from 'react-static';
+import convert from 'htmr';
 
-const BlogPost = () => (
-    <div>
-        Welcome to a blog post!
-    </div>
+import Layout from '../components/Layout';
+
+const BlogPost = ({ post }) => (
+    <Layout title={post.title}>
+        {convert(post.content)}
+    </Layout>
 );
 
-export default BlogPost;
+export default withRouteData(BlogPost);

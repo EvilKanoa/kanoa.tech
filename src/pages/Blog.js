@@ -1,9 +1,13 @@
 import React from 'react';
+import {withRouteData} from 'react-static';
 
-const Blog = () => (
-    <div>
+import Layout from '../components/Layout';
+
+const Blog = (props) => {
+    console.log(props);
+    return (<Layout>
         Welcome to my blog!
-    </div>
-);
+    </Layout>
+);}
 
-export default Blog;
+export default withRouteData(Blog);

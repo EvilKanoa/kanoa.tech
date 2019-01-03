@@ -9,7 +9,7 @@ const config = {
 };
 
 const getSiteData = async () => ({
-    title: `Kanoa's Site`
+    title: `Kanoa Haley`
 });
 
 const getRoutes = async () => {
@@ -21,15 +21,11 @@ const getRoutes = async () => {
             component: 'src/pages/Home'
         },
         {
-            path: '/about',
-            component: 'src/pages/About'
-        },
-        {
             path: '404',
             component: 'src/pages/NotFound'
         },
         {
-            path: '/blog',
+            path: 'blog',
             component: 'src/pages/Blog',
             getData: async () => ({ posts }),
             children: posts.map((post) => ({
