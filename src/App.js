@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Root, Routes} from 'react-static';
 
-const App = () => (
-    <Root>
-        <Routes/>
-    </Root>
-);
+import './index.css';
+
+class App extends Component {
+    render() {
+        return (
+            <Root>
+                <Routes/>
+            </Root>
+        );
+    }
+}
 
 export default App;

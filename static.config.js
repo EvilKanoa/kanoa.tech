@@ -18,8 +18,6 @@ const getSiteData = async () => ({
 const getRoutes = async () => {
     const posts = await md('blog', config.paths.public);
 
-    console.log(posts);
-
     return [
         {
             path: '/',

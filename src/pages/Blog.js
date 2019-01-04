@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 
 import Layout from '../components/Layout';
 
-const Blog = ({ posts }) => (
+const Blog = ({ posts }) => posts ? (
     <Layout>
         Welcome to my blog!
         {posts.map((post) =>
@@ -15,6 +15,6 @@ const Blog = ({ posts }) => (
             </Link>
         )}
     </Layout>
-);
+) : null;
 
 export default withRouteData(Blog);

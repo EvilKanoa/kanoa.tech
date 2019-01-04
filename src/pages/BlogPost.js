@@ -4,10 +4,10 @@ import convert from 'htmr';
 
 import Layout from '../components/Layout';
 
-const BlogPost = ({ post }) => (
+const BlogPost = ({ post }) => post ? (
     <Layout title={post.title}>
         {convert(post.content)}
     </Layout>
-);
+) : null;
 
 export default withRouteData(BlogPost);
