@@ -1,6 +1,7 @@
 ### Custom ###
 tmp/
 dist/
+public/blog/
 
 ### Windows ###
 # Windows thumbnail cache files

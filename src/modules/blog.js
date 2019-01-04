@@ -1,4 +1,4 @@
-const fs = require('fs').promises;
+const fs = require('fs-extra');
 const path = require('path');
 const fm = require('front-matter');
 const marked = require('marked');
@@ -29,6 +29,16 @@ export const validate = async (folder, slug) => {
     };
 };
 
+export const copyAssets = async (folder, meta, publicDir) => {
+    if (!meta || !meta.slug || !meta.assets || !publicDir) throw Error('Insufficient metadata to copy assets');
+
+    // eslint-disable-next-line no-restricted-syntax
+    for (const asset of meta.assets) {
+        // eslint-disable-next-line no-await-in-loop
+        await fs.copy(path.resolve(folder, meta.slug, asset), path.resolve(publicDir, folder, meta.slug, asset));
+    }
+};
+
 export const parse = async (folder, slug) => {
     const meta = await validate(folder, slug);
     if (!meta) throw Error(`Failed validation for ${slug}`);
@@ -39,27 +49,38 @@ export const parse = async (folder, slug) => {
     const { date, title, author } = postData.attributes;
     if (!date || !title || !author) throw Error(`Insufficient frontmatter for ${slug}`);
 
+    const content = marked(postData.body, {
+        baseUrl: slug
+    });
+
     return {
         ...meta,
         ...postData.attributes,
         markdown: postData.body,
-        content: marked(postData.body)
+        content
     };
 };
 
-export const md = async (folder) => {
+export const md = async (folder, publicDir) => {
     const slugs = await fs.readdir(path.resolve(folder));
     const posts = [];
+
+    if (publicDir) {
+        await fs.remove(path.resolve(publicDir, folder));
+    }
 
     // eslint-disable-next-line no-restricted-syntax
     for (const slug of slugs) {
         try {
             // eslint-disable-next-line no-await-in-loop
-            posts.push(await parse(folder, slug));
+            const post = await parse(folder, slug);
+            posts.push(post);
+            // eslint-disable-next-line no-await-in-loop
+            if (publicDir) await copyAssets(folder, post, publicDir);
         } catch (err) {
             console.error(err);
         }
     }
 
-    return posts;
+    return posts.sort((a, b) => new Date(a.date) > new Date(b.date));
 };

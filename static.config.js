@@ -5,6 +5,9 @@ const config = {
     devServer: {
         port: 8080,
         host: '127.0.0.1'
+    },
+    paths: {
+        public: 'public'
     }
 };
 
@@ -13,7 +16,9 @@ const getSiteData = async () => ({
 });
 
 const getRoutes = async () => {
-    const posts = await md('blog');
+    const posts = await md('blog', config.paths.public);
+
+    console.log(posts);
 
     return [
         {
