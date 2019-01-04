@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Sidebar = ({ children }) => (
-    <div>
+const Sidebar = ({ children, className }) => (
+    <div className={`sidebar ${className || ''}`}>
         {children}
     </div>
 );

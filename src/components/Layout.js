@@ -3,15 +3,21 @@ import React from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
-const Layout = ({ sidebar, title, children }) => (
-    <div>
+import './layout.css';
+
+const Layout = ({ sidebar, title, children, className }) => (
+    <div className={`layout ${className || ''} ${sidebar ? 'withSidebar' : ''}`}>
         <Header title={title}/>
-        {sidebar &&
-            <Sidebar>
-                {sidebar}
-            </Sidebar>
-        }
-        {children}
+        <div className="content-pane">
+            <div className="content">
+                {children}
+            </div>
+            {sidebar &&
+                <Sidebar>
+                    {sidebar}
+                </Sidebar>
+            }
+        </div>
     </div>
 );
 
