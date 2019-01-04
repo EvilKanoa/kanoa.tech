@@ -15,8 +15,8 @@ const getSiteData = async () => ({
     title: `Kanoa Haley`
 });
 
-const getRoutes = async () => {
-    const posts = await md('blog', config.paths.public);
+const getRoutes = async ({ dev }) => {
+    const posts = await md('blog', config.paths.public, dev ? null : config.siteRoot);
 
     return [
         {

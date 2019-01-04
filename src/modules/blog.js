@@ -39,7 +39,7 @@ export const copyAssets = async (folder, meta, publicDir) => {
     }
 };
 
-export const parse = async (folder, slug) => {
+export const parse = async (folder, slug, siteRoot) => {
     const meta = await validate(folder, slug);
     if (!meta) throw Error(`Failed validation for ${slug}`);
 
@@ -50,7 +50,7 @@ export const parse = async (folder, slug) => {
     if (!date || !title || !author) throw Error(`Insufficient frontmatter for ${slug}`);
 
     const content = marked(postData.body, {
-        baseUrl: slug
+        baseUrl: siteRoot ? `${siteRoot}/${folder}/${slug}/` : slug
     });
 
     return {
@@ -61,7 +61,7 @@ export const parse = async (folder, slug) => {
     };
 };
 
-export const md = async (folder, publicDir) => {
+export const md = async (folder, publicDir, siteRoot) => {
     const slugs = await fs.readdir(path.resolve(folder));
     const posts = [];
 
@@ -73,7 +73,7 @@ export const md = async (folder, publicDir) => {
     for (const slug of slugs) {
         try {
             // eslint-disable-next-line no-await-in-loop
-            const post = await parse(folder, slug);
+            const post = await parse(folder, slug, siteRoot);
             posts.push(post);
             // eslint-disable-next-line no-await-in-loop
             if (publicDir) await copyAssets(folder, post, publicDir);
