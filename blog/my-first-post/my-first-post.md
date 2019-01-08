@@ -1,5 +1,5 @@
 ---
-date: 02/01/2019
+date: Jan 1, 2019
 title: My First Post
 author: Kanoa Haley
 ---
