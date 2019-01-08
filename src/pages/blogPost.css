@@ -1,6 +1,7 @@
 .post-header {
     text-align: center;
     padding-top: 2em;
+    padding-bottom: 0.75em;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 14pt;
     display: flex;
@@ -13,4 +14,47 @@
     margin-top: 0.75em;
     font-size: 8pt;
     display: block;
+}
+
+/* default post styling */
+.post-content {
+    padding-bottom: 1em;
+}
+
+.post-content img {
+    max-width: 100%;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+    padding-top: 0.75em;
+}
+
+.post-content p {
+    font-size: 14pt;
+    line-height: 2;
+}
+
+.post-content p a {
+    text-decoration: underline;
+    color: var(--color-accent);
+}
+
+.post-content blockquote p {
+    font-style: italic;
+    font-size: 18pt;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 2em;
+    font-weight: 300;
+}
+
+.post-content blockquote p:before {
+    font-family: 'Sanchez', serif;
+    line-height: 1;
+    content: '\201C';
+    position: absolute;
+    top: -0.1em;
+    left: -0.35em;
+    font-size: 128pt;
+    color: var(--color-secondary);
 }

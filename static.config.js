@@ -1,4 +1,12 @@
+import {reloadRoutes} from 'react-static/node';
+import chokidar from 'chokidar';
 import {md} from './src/modules/blog';
+
+chokidar.watch('./blog').on('all', (event, path) => {
+    console.info(`${path} has changed, rebuilding...`);
+    reloadRoutes();
+});
+reloadRoutes();
 
 const config = {
     siteRoot: 'https://kanoa.tech',
