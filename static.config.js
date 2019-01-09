@@ -33,7 +33,7 @@ const getRoutes = async ({ dev }) => {
     return [
         {
             path: '/',
-            component: 'src/pages/Blog'
+            component: 'src/pages/Home'
         },
         {
             path: '404',
