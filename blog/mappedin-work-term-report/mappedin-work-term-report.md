@@ -36,10 +36,41 @@ Mappedin was started in 2011 by a few students at the University of Waterloo. No
 Near the start of my first term at Mappedin, I had to set some learning goals for myself. I created three seperate goals that I worked towards during both my terms at Mappedin. As more time passed, I fleshed out exactly what I wanted for each goal, as well as continuously working on my plan to achieve it. I'd like to dive into those three goals and elaborate on the details and how I went about achieving them.
 
 ### 1. Understanding Software Architecture
+At the start of my terms, I quickly realized that I didn't have a strong grasp on the software architecture that I was expected to develope for. Because of this, the first goal I developed was simply to gain an understanding of the architecture we used at Mappedin.
+
+> I would like to learn how a microservice software architecture is designed, laid out, and implemented in full.
+
+This was my leading goal throughout the terms, and I think I found it so useful since I was able to understand how many different skills I needed to learn before I could complete it. It was not as simple as learning about one specific thing since I wanted to gain the ability to implement an entire architecture myself. It required learning multiple programming languages, technologies, and dev ops (developer operations) basics. To really explain it, I would like to talk about each of these different "branches" that I had to learn.
+
+#### Programming Languages
+Since I was basing my target goal on Mappedin's own architecture, the main language to learn was `JavaScript`. Since I'd already used it before, and during my terms, it seemed like a non-issue. But when it comes to full-stack architecture, I learned that I needed to dive into the different types and versions of `JavaScript` as well as the different intrepreters for it. Luckily, since I had been using the language so much, I didn't have to spend too much time on this. The big take away for me was learning about `JavaScript` versioning, and how [`ECMAScript`](https://en.wikipedia.org/wiki/ECMAScript) defined the different versions of `JavaScript`. Once I was able to do that, I was fairly set for the type of architecture I was trying to learn.
+
+#### Technologies
+This was defintely where things started to get interesting. Since "software architecture" is such a broad statement, what I learned here could be vastly different for somebody else, and yet it could achieve the same end result. The big step for me was learning how different types of database (`relational` and `document`) could be leveraged for data stores and caches as well as how to actually use them. Thanks to some of my co-workers, I was able to understand this to a very basic level, which was enough for me to keep pushing forward! Beyond that, there was a lot to be learned about networking and internet protocols. I started by finally learning exactly what `REST` is, a type of "protocol" to talk with data servers. As well, I spent a while learning about `GraphQL`, which can be used in similar places to `REST` but has a lot of different specifics that end up becoming important. Using this knowledge (in addition to an uncountable number of little things I learned along the way), I was able to contribute to our architecture for my second term at Mappedin.
+
+#### Dev Ops
+Learning the basics of dev ops is something that I can't honestly say I've done. This was by far the hardest part of my goal for me, and one which I will have to continue pursuing. But I was able to get so much closer than I had planned or hoped so I believe I'll be able to get to the level of understanding that I'd like before too long. 
+
+I think the reason this was the hardest was simply because it was so foriegn to me. Since I've done software development before, learning new programming languages was an old trick. Even learning about databases and communication protocols felt familar. But once I had to start learning about deployments, instance scalling, and cloud architecture configuration, I was totally drowning in new things. I hope that the uniqueness of this will just make it more satisfying to learn about. For now though, I was able to make progress, and I know what I'll be learning for the next little while.
 
 ### 2. Developing Technical Writing Skills
+For my next goal, I actually used some previous goals of mine to define it. Since I had already worked in the industry previously, I knew how important technical writing skills are. I need to be able to communicate effectively with co-workers to help each other solve problems, I need to be able to write understandable and comprehensive documentation for software that I write or that others have wrote, and I need to be able to document bugs and features as well as action plans for them. These requirements lead me to my second goal, which was just a single facet of technical writing that I thought I needed to improve the most.
+
+> I would like to be able to fully document any bugs and/or features I find during my time on a project. This will be a critical skill no matter the workplace, and especially useful for any development role.
+
+For me, this was a simple contination of skills I've worked on in the past, but with a hard set goal. I had to spend a lot of time getting others to comment on my writing which could result in taking a fair amount of critism. But as I had to write more and more documentation and reports throughout the term, I got much better at communicating my ideas in an efficient manner. For me, to see people use my own documentation and finding it complete and useful was a strong indicator that I was making progress towards my goal. I don't have all that many details about my work for this goal since I believe it's as simple as 123.
+
+1. Write something
+2. Recieve feedback
+3. Repeat
+
+After enough iterations, you'll start to see improvement. For me, I was able to see my improvements when others had to use my documentation or commented on my reports. This was a good metric to follow my progress and I think I reached a decently efficient level by the end of my terms. This is a goal I think you can work on without ever stopping, but it doesn't hurt to set attainable goals so you can understand your own progress.
 
 ### 3. Learning To Teach Others
+For my final primary goal, I decided I should focus on an incredibly important professional skill: leadership and teaching. No matter where I've worked, whether in the software industry or part-time retail jobs from high-school, I've always found that the ability to teach others or take a leadership role when required to be a fundemental skill to succeeding at the job for both me personally, and the company professionally. I choose a more generalized goal for this one, since I believe that it's a skill you can always improve and should never stop working towards.
+
+> I want to be a positive help to my co-workers as well as a teacher to anybody who I could potentially help.
+
 
 ## The Job
 For my term at Mappedin, I was very lucky to end up in a role that I absolutely loved. I worked as a full-stack software developer on a `React + Express + Mongo` technology stack for the majority of the time I was there. Since I worked on the Enterprise Team, I spent most of my days working on our CMS (__C__ontent __M__angement __S__ystem) which included a 2D and 3D vector-like editor in conjunction with a front- and back-end data management system. I worked on a medium sized team with about five developers, one to two testers, a designer, a manager, and a product owner. Some of which ended up in our team's Christmas photo!
