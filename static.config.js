@@ -1,11 +1,13 @@
 import {reloadRoutes} from 'react-static/node';
 import chokidar from 'chokidar';
+import debounce from 'lodash.debounce';
 import {md} from './src/modules/blog';
 
 if (process.env.REACT_STATIC_ENV === 'development') {
+    const debouncedReload = debounce(reloadRoutes, 1000, { leading: true, trailing: false });
     chokidar.watch('./blog').on('all', (event, path) => {
         console.info(`${path} has changed, rebuilding...`);
-        reloadRoutes();
+        debouncedReload();
     });
     reloadRoutes();
 }
@@ -31,7 +33,7 @@ const getRoutes = async ({ dev }) => {
     return [
         {
             path: '/',
-            component: 'src/pages/Home'
+            component: 'src/pages/Blog'
         },
         {
             path: '404',

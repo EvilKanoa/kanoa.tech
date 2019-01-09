@@ -13,7 +13,7 @@ export const getDateString = (date) => new Date(date).toLocaleDateString('en-US'
 });
 
 const BlogPost = ({ post }) => post ? (
-    <Layout>
+    <Layout id="top">
         <Head>
             <title>{post.title}</title>
         </Head>
@@ -23,6 +23,9 @@ const BlogPost = ({ post }) => post ? (
         <div className="post-content">
             {convert(post.content)}
         </div>
+        <a className="scroll-up-button" href="#top">
+            <i className="fas fa-arrow-alt-circle-up"></i>
+        </a>
     </Layout>
 ) : <Layout/>;
 

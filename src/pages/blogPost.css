@@ -16,6 +16,27 @@
     display: block;
 }
 
+.scroll-up-button {
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.25em;
+    box-sizing: border-box;
+
+    width: 1em;
+    height: 1em;
+    z-index: 10;
+    line-height: 1em;
+
+    font-size: 4em;
+    color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.scroll-up-button:hover {
+    color: var(--color-accent2);
+    transition: color 0.33s;
+}
+
 /* default post styling */
 .post-content {
     padding-bottom: 1em;
@@ -34,9 +55,14 @@
     line-height: 2;
 }
 
-.post-content p a {
+.post-content a {
     text-decoration: underline;
     color: var(--color-accent);
+}
+
+.post-content ul, .post-content ol {
+    font-size: 14pt;
+    line-height: 1.75;
 }
 
 .post-content blockquote p {

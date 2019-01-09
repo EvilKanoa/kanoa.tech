@@ -82,5 +82,5 @@ export const md = async (folder, publicDir, siteRoot) => {
         }
     }
 
-    return posts.sort((a, b) => new Date(a.date) > new Date(b.date));
+    return posts.sort((a, b) => new Date(a.date) < new Date(b.date));
 };
