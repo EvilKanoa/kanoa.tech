@@ -71,6 +71,7 @@ For my final primary goal, I decided I should focus on an incredibly important p
 
 > I want to be a positive help to my co-workers as well as a teacher to anybody who I could potentially help.
 
+This term I went from having to ask questions constantly to being the person who was being asked questions constantly. Thanks to this being an 8-month term, I was able to stay when our team had new co-ops join. Within only hours of them being there, I was already helping them learn about our codebase. To me, this feels like I was able to push my leadership skills to the next level and as a result, I was able to assist my new co-workers.
 
 ## The Job
 For my term at Mappedin, I was very lucky to end up in a role that I absolutely loved. I worked as a full-stack software developer on a `React + Express + Mongo` technology stack for the majority of the time I was there. Since I worked on the Enterprise Team, I spent most of my days working on our CMS (__C__ontent __M__angement __S__ystem) which included a 2D and 3D vector-like editor in conjunction with a front- and back-end data management system. I worked on a medium sized team with about five developers, one to two testers, a designer, a manager, and a product owner. Some of which ended up in our team's Christmas photo!
