@@ -7,7 +7,7 @@ export const validate = async (folder, slug) => {
     const resolved = path.resolve(folder, slug);
     const stat = await fs.stat(resolved);
 
-    if (!stat.isDirectory()) throw Error('Post must be within a directory named by slug');
+    if (!stat.isDirectory()) throw Error(`Post must be within a directory named by slug (${slug})`);
 
     const files = await fs.readdir(resolved);
     let post = '';
