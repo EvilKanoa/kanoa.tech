@@ -89,10 +89,22 @@ Throughout my time working at Mappedin, I had to use a large variety of differen
 The most interesting thing about my job was simply how rewarding the work was, which was a happy surprise! I think my job was  fairly unique among co-op placements thanks to how quickly my own work was visible out in the world. I remember back to some time in the middle of my first term, when I had contributed and finished my first major addition to our platform. My roommate came back from shopping in a Toronto mall and mentioned a change he had noticed on the digital maps. It was my work! After that, I had all the passion in the world for my work. The ability to create something new, and then end up using it the next week at a mall was incredibly empowering. It was also the final push that made me realize my co-op terms are not just another part of my studies, but that they are a complete introduction to the work-place before I even finish school.
 
 ## Academic Relation
-// TODO: Write this section
+Since this post is about co-op terms, I'd like to talk about the connection between my work and my studies. In computer science at the University of Guelph, five co-op terms must be completed to graduate with the co-op major. My time at Mappedin encapsulated my first two terms for Guelph so it deffintely became a major contributor. I feel that the co-op experience is massively important to my education at Guelph and I think the best way to explain that is to talk about two of the, in my opinion, most benificial portions of the co-op experience.
+
+### 1. Real Practice
+No matter how much homework you do, and no matter how much reading you do, I find that whenever I finish a course I'm still lacking a certin confidence with the material that I've only gained through a lot of practice over much longer periods of time. Because of this, I find that the work I do during my co-op terms acts as an incredibly beneficial supplement to my course work. Unlike school work, the things I find myself doing during co-op gives me a better pace to constantly reinforce ideas and concepts over and over again. This, to me, leads to a much stronger understanding of what I've learned in past courses.
+
+Since co-op terms are undertaken with jobs in the field you're studying, you get to continue learning during them in a much different manner than school. For example, through my first two years in computer science, I learned a lot about data structures and different programming methodologies. This carried over to when I was working in the industry at Mappedin and allowed me to practice these techniques and skills every day. I spent a large amount of my time implementing components for our applications that closely tied into what I learned in my object-oriented programming course and allowed me to reinforce my understanding gained from the course.
+
+With this idea, that practice makes perfect, I feel that gaining that practice through co-op terms in-between school terms benefits my studies beyond what any course could offer on its own.
+
+### 2. Mentorship
+During my terms at Mappedin, there were quite a few of my co-workers I was lucky enough to have mentor me. For the most part, this mentorship was for fairly simple things. Having many different mentors with differing perspectives and skillsets gave me a much better insight into my own skills and what I needed to learn. Unlike my studies, the learning environment during my terms at Mappedin allowed me to gain new skills because of the variaty in mentors. This secondary learning environment and new teachers was a perfect complement to all that I learned in skill. I think that the system of mentors and leaders that you gain throughout co-op experience provides a perfect way to validate and improve on skills from school.
 
 ## Conclusion
-// TODO: Write this section
+I find it incredibly hard to sumarize my terms at Mappedin just because of the huge variaty in experience I gained, the number of amazing people who helped me, and the number of goals I was able to either realize or complete. 
+
+My co-op experience has given me much to think about and a deeper understand of what I'm striving for professionally and academically. Thanks to all the amazing people I encountered along the way, I've been given a window into all the directions my studies could take me. I've been able to reach goals I thought unobtainable in eight months, I've learned more than I thought possible while working, and I've gained a new passion and determination for my future as a computer scientist.
 
 ## Shoutouts
 During my terms at Mappedin, there were so very many people who helped and guided me along the way. I would like to give them all a shout out, but that would take up way too much space. Instead, I would like to acknowledge the people who were pivotal to my work term, my professionally development, and/or contributed to my work towards my goals during the term.
