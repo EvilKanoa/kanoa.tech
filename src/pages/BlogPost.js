@@ -1,32 +1,36 @@
-import React from 'react';
-import {withRouteData, Head} from 'react-static';
-import convert from 'htmr';
+import React, { useMemo } from "react";
+import { useRouteData } from "react-static";
+import convert from "htmr";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
-import './blogPost.css';
+import "./blogPost.css";
 
-export const getDateString = (date) => new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    day: '2-digit',
-    month: 'long'
-});
+export const getDateString = date =>
+  new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    day: "2-digit",
+    month: "long"
+  });
 
-const BlogPost = ({ post }) => post ? (
-    <Layout id="top">
-        <Head>
-            <title>{post.title}</title>
-        </Head>
-        <div className="post-header">
-            {getDateString(post.date || new Date())} <i className="icon fas fa-dot-circle"></i> {post.author || 'No Author'}
-        </div>
-        <div className="post-content">
-            {convert(post.content)}
-        </div>
-        <a className="scroll-up-button" href="#top">
-            <i className="fas fa-arrow-alt-circle-up"></i>
-        </a>
+const BlogPost = () => {
+  const {
+    post: { title, date = new Date(), author = "No Author", content }
+  } = useRouteData();
+  const dateString = useMemo(() => getDateString(date), [date]);
+  const postContent = useMemo(() => convert(content), [content]);
+
+  return (
+    <Layout id="top" metaTitle={title}>
+      <div className="post-header">
+        {dateString} <i className="icon fas fa-dot-circle" /> {author}
+      </div>
+      <div className="post-content">{postContent}</div>
+      <a className="scroll-up-button" href="#top">
+        <i className="fas fa-arrow-alt-circle-up" />
+      </a>
     </Layout>
-) : <Layout/>;
+  );
+};
 
-export default withRouteData(BlogPost);
+export default BlogPost;

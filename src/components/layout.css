@@ -1,93 +1,69 @@
 .layout {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 
-    width: 100%;
-    min-height: 100vh;
-    background: var(--color-background);
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-background);
 }
 
 .layout .header {
-    flex: 0 0 8em;
-    width: 100%;
+  flex: 0 0 4em;
+  width: 100%;
 
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 
-    color: var(--color-secondary);
-    background: var(--color-primary)
+  color: var(--color-secondary);
+  background: var(--color-primary);
 }
 
 .layout .header .header-logo {
-    flex: 0 0 6em;
-    height: 6em;
-    margin: 1em;
-    border-radius: 50%;
-    line-height: 6em;
-    text-align: center;
-    background: var(--color-accent);
+  flex: 0 0 3em;
+  height: 3em;
+  margin: 0.5em;
+
+  border-radius: 35%;
+  line-height: 3em;
+  text-align: center;
+}
+
+.layout .header .header-logo > i.fas {
+  color: var(--color-secondary);
+  font-size: 20pt;
+  margin-bottom: 0.125em;
+  vertical-align: middle;
 }
 
 .layout .header .header-logo:hover {
-    box-shadow: inset 0 0 16px 0 black;
-}
-
-.layout .header .header-logo > span {
-    font-size: 24pt;
-    font-weight: 700;
+  box-shadow: 0 0 8px 0 black;
 }
 
 .layout .header .header-title {
-    flex: 1 0 auto;
-    height: 8em;
+  flex: 1 0 auto;
+  height: 4em;
+  margin-right: 4em;
 
-    text-align: center;
-    line-height: 8em;
+  text-align: center;
+  line-height: 4em;
 }
 
 .layout .header .header-title > span {
-    font-size: 28pt;
-    font-weight: 700;
-}
-
-.layout .header .header-action {
-    flex: 0 0 6em;
-    height: 6em;
-    margin: 1em;
-    border-radius: 50%;
-    line-height: 6em;
-    text-align: center;
-    background: var(--color-accent);
-}
-
-.layout .header .header-action:hover {
-    box-shadow: inset 0 0 16px 0 black;
-}
-
-.layout .header .header-action > span {
-    font-weight: 700;
-    font-size: 16pt;
+  font-size: 18pt;
+  font-weight: 700;
 }
 
 .layout .content-pane {
-    flex: 1 1 auto;
-    width: 100%;
+  flex: 1 1 auto;
+  width: 100%;
 
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.layout .sidebar {
-    flex: 0 0 12em;
-    padding: 0 1em;
-
-    color: var(--color-primary);
-    background: var(--color-secondary);
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .layout .content {
-    flex-grow: 1;
-    max-width: 64em;
-    padding: 0 1em;
-    margin: 0 auto;
+  flex-grow: 1;
+  max-width: 64em;
+  padding: 0 1em;
+  margin: 0 auto;
 }

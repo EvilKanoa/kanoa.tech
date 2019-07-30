@@ -1,16 +1,19 @@
-import React, {Component} from 'react'
-import {Root, Routes} from 'react-static';
+import React, { Suspense } from "react";
+import { Router } from "@reach/router";
+import { Root, Routes } from "react-static";
 
-import './index.css';
+import Loading from "./components/Loading";
 
-class App extends Component {
-    render() {
-        return (
-            <Root>
-                <Routes/>
-            </Root>
-        );
-    }
-}
+import "./index.css";
+
+const App = () => (
+  <Root>
+    <Suspense fallback={<Loading />}>
+      <Router>
+        <Routes path="*" />
+      </Router>
+    </Suspense>
+  </Root>
+);
 
 export default App;

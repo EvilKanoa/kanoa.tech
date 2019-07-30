@@ -2,6 +2,7 @@
 tmp/
 dist/
 public/blog/
+artifacts/
 
 ### Windows ###
 # Windows thumbnail cache files

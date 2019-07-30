@@ -1,59 +1,62 @@
-import {reloadRoutes} from 'react-static/node';
-import chokidar from 'chokidar';
-import debounce from 'lodash.debounce';
-import {md} from './src/modules/blog';
+import { reloadClientData } from "react-static/node";
+import chokidar from "chokidar";
+import debounce from "lodash.debounce";
+import { md } from "./src/modules/blog";
 
-if (process.env.REACT_STATIC_ENV === 'development') {
-    const debouncedReload = debounce(reloadRoutes, 1000, { leading: true, trailing: false });
-    chokidar.watch('./blog').on('all', (event, path) => {
-        console.info(`${path} has changed, rebuilding...`);
-        debouncedReload();
-    });
-    reloadRoutes();
+if (process.env.REACT_STATIC_ENV === "development") {
+  const reload = debounce(reloadClientData, 1000, {
+    leading: true,
+    trailing: false
+  });
+  chokidar.watch("./blog/**/*").on("all", (_event, path) => {
+    console.info(`${path} has changed, rebuilding...`);
+    reload();
+  });
+  reloadClientData();
 }
 
 const config = {
-    siteRoot: 'https://kanoa.tech',
-    devServer: {
-        port: 8080,
-        host: '127.0.0.1'
-    },
-    paths: {
-        public: 'public'
-    }
+  siteRoot: "http://localhost:8080",//"https://kanoa.tech",
+  devServer: {
+    port: 8080,
+    host: "127.0.0.1"
+  },
+  paths: {
+    public: "public"
+  }
 };
 
 const getSiteData = async () => ({
-    title: `Kanoa Haley`
+  title: "Kanoa's Blog"
 });
 
 const getRoutes = async ({ dev }) => {
-    const posts = await md('blog', config.paths.public, dev ? null : config.siteRoot);
+  const posts = await md(
+    "blog",
+    config.paths.public,
+    dev ? null : config.siteRoot
+  );
 
-    return [
-        {
-            path: '/',
-            component: 'src/pages/Home'
-        },
-        {
-            path: '404',
-            component: 'src/pages/NotFound'
-        },
-        {
-            path: 'blog',
-            component: 'src/pages/Blog',
-            getData: () => ({ posts }),
-            children: posts.map((post) => ({
-                path: post.slug,
-                component: 'src/pages/BlogPost',
-                getData: () => ({ post })
-            }))
-        }
-    ];
+  return [
+    {
+      path: "404",
+      template: "src/pages/NotFound"
+    },
+    {
+      path: "/",
+      template: "src/pages/Blog",
+      getData: () => ({ posts }),
+      children: posts.map(post => ({
+        path: `blog/${post.slug}`,
+        template: "src/pages/BlogPost",
+        getData: () => ({ post })
+      }))
+    }
+  ];
 };
 
 export default {
-    ...config,
-    getSiteData,
-    getRoutes
+  ...config,
+  getSiteData,
+  getRoutes
 };

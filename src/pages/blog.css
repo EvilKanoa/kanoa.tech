@@ -1,49 +1,53 @@
 .blog-listing {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .post-summery {
-    width: 100%;
-    height: 14em;
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 2em;
+  width: 100%;
+  height: 14em;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 2em;
 
-    padding: 1em;
-    border-radius: 0.25em;
-    background: var(--color-secondary);
-    overflow: hidden;
-    position: relative;
+  padding: 1em;
+  border-radius: 0.25em;
+  background: var(--color-secondary);
+  overflow: hidden;
+  position: relative;
 }
 
 .post-summery-header {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20pt;
-    display: flex;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20pt;
+  display: flex;
 }
 
 .post-summery-header .icon {
-    font-size: 8pt;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1.25em;
+  font-size: 8pt;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.25em;
 }
 
 .post-summery-date {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .post-summery-content {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 .post-summery:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6em;
-    pointer-events: none;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--color-secondary));
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    var(--color-secondary)
+  );
 }

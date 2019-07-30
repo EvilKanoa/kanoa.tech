@@ -1,24 +1,15 @@
-import React from 'react';
+import React from "react";
+import Header from "./Header";
 
-import Header from './Header';
-import Sidebar from './Sidebar';
+import "./layout.css";
 
-import './layout.css';
-
-const Layout = ({ sidebar, title, children, className, ...layoutProps }) => (
-    <div className={`layout ${className || ''} ${sidebar ? 'withSidebar' : ''}`} {...layoutProps}>
-        <Header title={title}/>
-        <div className="content-pane">
-            <div className="content">
-                {children}
-            </div>
-            {sidebar &&
-                <Sidebar>
-                    {sidebar}
-                </Sidebar>
-            }
-        </div>
+const Layout = ({ title, metaTitle, children, ...rest }) => (
+  <div className="layout" {...rest}>
+    <Header title={title} metaTitle={metaTitle} />
+    <div className="content-pane">
+      <div className="content">{children}</div>
     </div>
+  </div>
 );
 
 export default Layout;

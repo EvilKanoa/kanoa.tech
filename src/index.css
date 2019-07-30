@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300i,400,700');
-@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300i,400,700");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 
 body {
-    --color-primary: #2d3236;
-    --color-secondary: #e0e0de;
-    --color-accent: #1561f1;
-    --color-accent2: #7862ff;
-    --color-background: #fefefe;
+  --color-primary: #2d3236;
+  --color-secondary: #e0e0de;
+  --color-accent: #1561f1;
+  --color-accent2: #7862ff;
+  --color-background: #fefefe;
 
-    margin: 0;
+  margin: 0;
 
-    /* font */
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  /* font */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 a {
-    color: inherit;
-    cursor: pointer;
-    text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: inherit;
 }
