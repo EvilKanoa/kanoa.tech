@@ -16,7 +16,7 @@ if (process.env.REACT_STATIC_ENV === "development") {
 }
 
 const config = {
-  siteRoot: "http://localhost:8080",//"https://kanoa.tech",
+  siteRoot: "https://kanoa.tech",
   devServer: {
     port: 8080,
     host: "127.0.0.1"
