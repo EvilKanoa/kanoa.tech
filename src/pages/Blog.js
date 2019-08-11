@@ -8,18 +8,21 @@ import Layout from "../components/Layout";
 
 import "./blog.css";
 
-const SNIPPET_LENGTH = 300;
+const SNIPPET_LENGTH = 1200;
 
+const allowedNodes = new Set(["p", "h1", "h2", "h3", "h4", "h5", "h6"]);
+const stripNodes = new Set(["a"])
 const getPostSnippet = content => {
   let i = 0;
-  const allowedNodes = new Set(["p", "h1", "h2", "h3", "h4", "h5", "h6"]);
-  const stripNodes = new Set(["a"])
+  let length = 0;
 
   return convert(content, {
     transform: {
-      _: (node, props, children) => {
+      _: (node = "", props, children) => {
         if (props === undefined) {
-          return <Fragment key={i++}>{node}</Fragment>;
+          const trimmed = node.substring(0, SNIPPET_LENGTH - length);
+          length += trimmed.length;
+          return trimmed;
         } else if (allowedNodes.has(node)) {
           return React.createElement("p", { key: i++ }, children);
         } else if (stripNodes.has(node)) {
