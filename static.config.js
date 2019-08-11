@@ -1,18 +1,17 @@
-import { reloadClientData } from "react-static/node";
+import { rebuildRoutes } from "react-static/node";
 import chokidar from "chokidar";
 import debounce from "lodash.debounce";
 import { md } from "./src/modules/blog";
 
 if (process.env.REACT_STATIC_ENV === "development") {
-  const reload = debounce(reloadClientData, 1000, {
+  const rebuild = debounce(rebuildRoutes, 1000, {
     leading: true,
     trailing: false
   });
   chokidar.watch("./blog/**/*").on("all", (_event, path) => {
     console.info(`${path} has changed, rebuilding...`);
-    reload();
+    rebuild();
   });
-  reloadClientData();
 }
 
 const config = {
@@ -30,7 +29,9 @@ const getSiteData = async () => ({
   title: "Kanoa's Blog"
 });
 
-const getRoutes = async ({ dev }) => {
+const getRoutes = async ({ stage }) => {
+  const dev = stage === "dev";
+
   const posts = await md(
     "blog",
     config.paths.public,
