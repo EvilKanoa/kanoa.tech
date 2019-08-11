@@ -8,16 +8,22 @@ import Layout from "../components/Layout";
 
 import "./blog.css";
 
+const SNIPPET_LENGTH = 300;
+
 const getPostSnippet = content => {
   let i = 0;
-  const allowed = ["p", "h1", "h2", "h3", "h4", "h5", "h6"];
+  const allowedNodes = new Set(["p", "h1", "h2", "h3", "h4", "h5", "h6"]);
+  const stripNodes = new Set(["a"])
+
   return convert(content, {
     transform: {
       _: (node, props, children) => {
         if (props === undefined) {
           return <Fragment key={i++}>{node}</Fragment>;
-        } else if (allowed.includes(node)) {
-          return React.createElement("p", props, children);
+        } else if (allowedNodes.has(node)) {
+          return React.createElement("p", { key: i++ }, children);
+        } else if (stripNodes.has(node)) {
+          return React.createElement(Fragment, { key: i++ }, children);
         }
       }
     }
@@ -27,14 +33,18 @@ const getPostSnippet = content => {
 const PostSummery = ({ date, content, title, author }) => {
   const dateString = useMemo(() => getDateString(date || new Date()), [date]);
   const snippet = useMemo(() => getPostSnippet(content), [content]);
+
   return (
     <>
       <div className="post-summery-header">
         <span className="post-summery-title">{title}</span>
-        <span className="post-summery-date">{dateString}</span>
-        <i className="icon fas fa-dot-circle" />
-        <span className="post-summery-author">{author || "No Author"}</span>
+        <div className="post-summery-details">
+          {dateString}
+          <i className="icon fas fa-dot-circle" />
+          {author || "No Author"}
+        </div>
       </div>
+      <hr />
       <div className="post-summery-content">{snippet}</div>
     </>
   );
