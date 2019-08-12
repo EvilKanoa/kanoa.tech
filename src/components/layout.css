@@ -63,7 +63,7 @@
 
 .layout .content {
   flex-grow: 1;
-  max-width: 64em;
+  max-width: 44em;
   padding: 0 1em;
   margin: 0 auto;
 }
