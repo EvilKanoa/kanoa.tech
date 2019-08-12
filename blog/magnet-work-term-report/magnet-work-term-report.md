@@ -29,32 +29,32 @@ Soon after I started my term at Magnet, I set out to achieve a set of goals that
 
 One key point I had in mind when choosing my own learning goals was what Magnet could provide me. I wanted to learn about how our software is used so I could become a more well-rounded developer. That is why I choose that as the focus of two of my goals.
 
-### 1. Understanding the role of digital forensics during an investigation.
-// TODO: Clean up
+### 1. Understanding the role of digital forensics.
+For my first learning goal, I decided to aim for a unique learning opportunity that I could only get from Magnet. The main drive for this goal was understanding why we do the work we do at Magnet and how our software and our individual contributions made a difference.
 
-I want to understand the criminal investigation and examination process, and in particular the role of forensics during an investigation.
+> I want to understand the role of digital forensics during an investigation and examination process.
 
-To achieve this goal, I will seek out individuals who work in the field and shadow as many opportunities as possible.
+To achieve this goal, my plan was to seek out individuals who work in the field and learn from them in addition to shadowing opportunities that I could learn from and would help complete my goal. I decided that I could use my own understanding as my metric to measure any success towards this goal.
 
-I can base my progress (and hopefully success) of this goal upon my own understanding of the investigation process. I will have succeeded if I have a basic but complete understanding of the investigation process.
+Reflecting back on my term, I believe I have been able to complete this goal, at least by my original measure of success. I have gained a strong understanding of what digital forensics plays in an investigation. I now also know that there are many complexities and details that would take years to understand fully, but I believe I was able to obtain a very basic but complete understanding.
 
-### 2. Becoming competent at back-end development in Clojure.
-// TODO: Clean up
+### 2. Back-end development in Clojure.
+I ended up deciding on my second goal after a week and a bit at Magnet. The main product I worked on had a back-end written in [Clojure](https://clojure.org). Clojure is a functional dialict of Lisp that runs on the JVM. Before this co-op, I had never used a strong functional language, a Lisp language, or a JVM language for a back-end. Because of these factors, I wanted to ensure I learned as much about Clojure as I could and hence I set out to become competent in the language.
 
-I want to improve my skills in full-stack software development involving ECMAScript and Clojure.
+> I want to become competent at back-end development in the Clojure programming language.
 
-I will continuously seek criticism involving my work as well as taking advantage of company resources and experienced co-workers.
+I set out an action plan that involved continously seeking criticism of my work as well as taking advantage of experience co-workers and company resources. Using my work at the end of the term as evidence, I would be able to see if I had completed this goal. I would have completed the goal if I was able to build a complex **new** feature on the Clojure back-end.
 
-Since this goal revolves around general improvement, I can say that if my skills are better than they were when I started, I have achieved my goal.
+Now looking back at my work, I can absolutely say I have achieved this goal. During my term I fell in love with Clojure and the expressiveness that it afforded developers. I had already managed to build a complex new feature by my second month at Magnet thanks to a commitment to learn Clojure.
 
-### 3. Ability to perform a digital forensics search.
-// TODO: Clean up
+### 3. Perform a digital forensics search.
+As my third (and final) goal, I choose to pursue a new skill which I've been interested in for years but haven't been able to learn until now. I have always been interested in how real investigators and examiners work. Because Magnet offers in-house training on their tools for any employee, I decided to take advantage of that for this goal.
 
-I want to be able to conduct a digital forensics examination of my own without the use of advanced forensic tools.
+> I want to be able to conduct a digital forensics examination of my own with the use of advanced forensic tools.
 
-I will take advantage of all the company resources as well as practice digital forensics with and without the use of tools throughout my work-term.
+The action plan for this goal was a bit of a cope out compared to most, since Magnet offered a course, AX200, that would satisfy this goal upon completion. To flex out my plan a bit, I decided I would work through AX200 as well as practice with the tools involved to maximize my learning. Completion of the goal was a fairly simple metric, I needed to be able to take an image of a real mobile phone or computer and examine it correctly.
 
-I should be able to successfully acquire and analysis a mobile and computer system.
+This is the one goal I feel that I was not able to complete in its entirety. I was able to finish AX200 and practiced much more outside of that, but the more I learned, the more I realized I wanted to learn and would need to know. In the end, I was able to complete my goal with the original scope, but in the process I realized that my original scope was wrong. I hope to continue pursuing this goal after I leave Magnet.
 
 # My Job at Magnet
 I worked at Magnet as a **Software Developer Co-op**. During my term I spent the majority of my time working on the **D**igital **E**vidence **M**angement (or DEM for short) team. I worked as a full-stack developer with my primary focus being [Magnet AUTOMATE](https://www.magnetforensics.com/products/magnet-automate/), a workflow orchestration product designed to reduce case back log for law enforcement.
