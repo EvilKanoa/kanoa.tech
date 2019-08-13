@@ -87,3 +87,10 @@
   font-size: 128pt;
   color: var(--color-secondary);
 }
+
+@media print {
+  .scroll-up-button {
+    display: none !important;
+  }
+}
+

@@ -41,15 +41,16 @@ const getRoutes = async ({ stage }) => {
   return [
     {
       path: "404",
-      template: "src/pages/NotFound"
+      template: "src/components/NotFound"
     },
+    { path: "/loading", template: "src/components/Loading" },
     {
       path: "/",
-      template: "src/pages/Blog",
+      template: "src/components/Blog",
       getData: () => ({ posts }),
       children: posts.map(post => ({
         path: `blog/${post.slug}`,
-        template: "src/pages/BlogPost",
+        template: "src/components/BlogPost",
         getData: () => ({ post })
       }))
     }
