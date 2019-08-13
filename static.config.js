@@ -8,10 +8,12 @@ if (process.env.REACT_STATIC_ENV === "development") {
     leading: true,
     trailing: false
   });
-  chokidar.watch("./blog/**/*").on("all", (_event, path) => {
-    console.info(`${path} has changed, rebuilding...`);
-    rebuild();
-  });
+  chokidar
+    .watch("./blog/**/*", { ignoreInitial: true })
+    .on("all", (_event, path) => {
+      console.info(`File changed: ${path}`);
+      rebuild();
+    });
 }
 
 const config = {
