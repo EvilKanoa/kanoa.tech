@@ -1,5 +1,5 @@
 ---
-date: Sep 11, 2019
+date: Aug 23, 2019
 title: "Magnet Forensics: Work Term 3"
 author: Kanoa Haley
 ---
@@ -61,13 +61,22 @@ I worked at Magnet as a **Software Developer Co-op**. During my term I spent the
 
 While working as a developer at Magnet, my responsibilities included maintaining existing software, implementing new features, and ensuring the quality of our software. I developed in multiple environments including front-end web applications, distributed backend servers, and high-performance processing applications. The key languages I worked in were **JavaScript**, **Clojure**, and **C#**. I did the majority of my front-end work in [React](https://reactjs.org/) using modern ES9 code features on a custom API built by Magnet. The other half of my work resolved around back-end programming in [Clojure](https://clojure.org) and managing complex distributed [Jenkins](https://jenkins.io) pipelines.
 
-Luckily for me, this job provided a diverse set of new and known technologies. I found this perfect because it allowed me to continue working towards an expert skillset within JavaScript and React that I enjoyed using during previous projects (`CIS*3750`) and jobs (MappedIn and Zeitspace). As well, I had to learn Clojure and hence Lisp languages without any prior experience. Finally, this was an amazing experience with regards to learning how distributed pipelines are designed and built primarily in Jenkins.
+Luckily for me, this job provided a diverse set of new and known technologies. I found this perfect because it allowed me to continue working towards an expert skill set within JavaScript and React that I enjoyed using during previous projects (`CIS*3750`) and jobs (MappedIn and Zeitspace). As well, I had to learn Clojure and hence Lisp languages without any prior experience. Finally, this was an amazing experience with regards to learning how distributed pipelines are designed and built primarily in Jenkins.
 
 # Academic Connections
-// TODO
+I'd like to take a moment to talk about the connections between my term at Magnet and my academic studies. In theory, co-op terms are intended to enhance and improve the academic side of my education. I'll explain why my term at Magnet absolutely satisfied that intention for three main reasons.
+
+### 1. Real world practice.
+A huge component of a co-op term is obviously working. But not just any work, the work should (and does in my cases) relate directly to the academic program you're in. In my case, my pursuit for a computer science degree relates directly to work as a software developer. This allows, in essence, continuos practice using what I've learned during my studies. Because I need to take advantage of new skills and knowledge from previous study terms, my co-op terms end up reinforcing everything I've learned previously at skill in a way that you could not possibly get only from school. This huge amount of practice solidifies academic learning wonderfully.
+
+### 2. Experienced mentors.
+Throughout my co-op terms, and at Magnet in particular, I've always taking great advantage of all my co-workers who have years of experience in the field. I find that this provides a great insight into the unique skills and knowledge that individuals experienced in the industry can provide. This provides a perspective that contrasts that of academic experts. The new perspective gives insight into skills that I may have never learned if I had only practiced at school and academically.
+
+### 3. Diverse experiences.
+For me, I have worked at multiple employers for my co-op terms so far. Each employer has given me a different experience since they build different products, work in differing industries, and have different clients. Additionally, you learn a lot about the industry and products of the company you work for. During this term, I was exposed to cyber security and digital forensics which I've never learned about before. This was a diverse experience for me in the sense that I learned quite a lot that I never would have learned had I not worked at Magnet. I believe that expanding the diversity of your experiences gives you more background knowledge and allows you to become a more well-rounded employee and student. I think this experience is hard to obtain at school compared to co-op terms.
 
 # Conclusion
-// TODO
+My term spent at Magnet Forensics this summer has been an incredible experience. I was able to contribute to majorly to projects that helped make real differences in the world. I also was lucky enough to learn a whole host of new technologies including Clojure, C#, and Jenkins. In the end I was able to meet most of my goals I had set out at the beginning of the semester. Between the work I finished and the goals I achieved, I found I grew a lot during the term, both in skill set and experience. I really hope you've enjoyed this post and I encourage you to pursue information about anything you found interesting!
 
 # Kudos
 As a final note, I want to give my kudos to some of the people who helped me throughout my term and provided support. They very much so deserve some acknowledgement.
