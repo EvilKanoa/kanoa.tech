@@ -18,7 +18,7 @@
   background: var(--color-primary);
 }
 
-.layout .header .header-logo {
+.layout .header .header-button {
   flex: 0 0 3em;
   height: 3em;
   margin: 0.5em;
@@ -28,14 +28,14 @@
   text-align: center;
 }
 
-.layout .header .header-logo > i.fas {
+.layout .header .header-button > i.fas {
   color: var(--color-secondary);
   font-size: 20pt;
   margin-bottom: 0.125em;
   vertical-align: middle;
 }
 
-.layout .header .header-logo:hover {
+.layout .header .header-button:hover {
   box-shadow: 0 0 8px 0 black;
 }
 

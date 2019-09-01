@@ -9,12 +9,15 @@ const Header = ({ title, metaTitle }) => {
       <Head>
         <title>{metaTitle || title || siteTitle}</title>
       </Head>
-      <Link className="header-logo" to="/">
+      <Link className="header-button" to="/">
         <i className="fas fa-home" />
       </Link>
       <div className="header-title">
         <span>{title || siteTitle}</span>
       </div>
+      <a className="header-button" href="KanoaHaleyResume.pdf" download>
+        <i class="fas fa-address-card" />
+      </a>
     </div>
   );
 };
