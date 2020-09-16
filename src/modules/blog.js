@@ -88,8 +88,9 @@ export const md = async (folder, publicDir, siteRoot) => {
       if (publicDir) await copyAssets(folder, post, publicDir);
     } catch (err) {
       console.error(err);
+      console.warn(`Errors encountered during parsing, skipping ${slug}...`);
     }
   }
 
-  return posts.sort((a, b) => new Date(a.date) < new Date(b.date));
+  return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 };

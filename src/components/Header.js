@@ -16,7 +16,7 @@ const Header = ({ title, metaTitle }) => {
         <span>{title || siteTitle}</span>
       </div>
       <a className="header-button" href="KanoaHaleyResume.pdf" download>
-        <i class="fas fa-address-card" />
+        <i className="fas fa-address-card" />
       </a>
     </div>
   );
