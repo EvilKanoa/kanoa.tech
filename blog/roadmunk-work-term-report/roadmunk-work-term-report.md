@@ -13,7 +13,7 @@ Over the course of the past eight months, I spent my time on a co-op work term a
 - [About Roadmunk](#about-roadmunk): Overview of Roadmunk from my point of view.
 - [Learning Goals](#learning-goals): Insight into my major learning goals for my term.
 - [Life as a Web App Developer](#life-as-a-web-app-developer): Description of my job.
-- [Conclusion](#conclusions): Wraps this post up.
+- [Conclusion](#conclusion): Wraps this post up.
 
 # About Roadmunk
 Roadmunk is a medium sized company based in Kitchener and Toronto that creates and sells product roadmapping tools. Essentially, Roadmunk builds the tools that other individuals, groups, and companies can leverage while creating a product roadmap or other feedback based roadmap. Some of Roadmunk's customers include Amazon, Nike, and Mastercard.
