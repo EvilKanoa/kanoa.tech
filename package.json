@@ -18,7 +18,7 @@
     "chokidar": "3.0.2",
     "front-matter": "3.0.2",
     "fs-extra": "8.1.0",
-    "htmr": "0.8.6",
+    "htmr": "0.8.7",
     "lodash.debounce": "4.0.8",
     "marked": "0.7.0",
     "react": "16.9.0",
